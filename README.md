@@ -1,4 +1,5 @@
-<br />
+<div id="top"></div>
+
 <div align="center">
   <h1 align="center">Brazil nut productivity estimates in secondary forest</h1>
 
@@ -11,30 +12,30 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Introduction">Introduction</a>
+      <a href="#introduction">Introduction</a>
     </li>
     <li><a href="#data">Data</a></li>
     <ul>
-        <li><a href="#Secondary">Secondary</a></li>
-        <li><a href="#Primary">Primary</a></li>
+        <li><a href="#secondary">Secondary</a></li>
+        <li><a href="#primary">Primary</a></li>
     </ul>
     <li><a href="#individual-based-model">Individual-based Model</a></li>
     <li><a href="#pos-model-data-management-and-plotting">Pos-model data management and plotting</a></li>
     <ul>
-        <li><a href="#Basal-Area">Basal Area</a></li>
-        <li><a href="#Fruit-prodcutivity">Fruit prodcutivity</a></li>
-        <li><a href="#Mapping">Mapping</a></li>
+        <li><a href="#basal-area">Basal Area</a></li>
+        <li><a href="#fruit-prodcutivity">Fruit prodcutivity</a></li>
+        <li><a href="#mapping">Mapping</a></li>
     </ul>
   </ol>
 </details>
 
 ## Introduction
+
   <p> Bellow is a summary of all the programming that was done to my Master Thesis. 
       I can't provide the data and go into more details in methods and results due to the paper that was written about this project.
   </p>
@@ -44,6 +45,7 @@
   <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Data
+
 ### Secondary
 ```R
 # Original R file is "BN_price.R"
@@ -92,8 +94,9 @@ bnut_fruit_price <- ggplot(dat_fruits, aes(x = Ano))+
 # ggsave(filename ="output/bnut_fruit_price.png",plot = bnut_fruit_price,dpi = 300, width = 25, height = 12, units = c("cm"))
 bnut_fruit_price
 ```
-![download](https://user-images.githubusercontent.com/38635706/156423538-ab776f2a-a1bd-4638-8ed8-f1ba6a2bf18b.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156423538-ab776f2a-a1bd-4638-8ed8-f1ba6a2bf18b.png" alt="Logo" height="453,54">
+</p>
 
 ```R
 #### ---- Price per lata ----####
@@ -130,7 +133,12 @@ bnut_lata_price <- ggplot(dat_lata, aes(x = Ano))+
 # ggsave(filename ="output/bnut_lata_price.png",plot = bnut_lata_price,dpi = 300, width = 25, height = 12, units = c("cm"))
 bnut_lata_price
 ```
-![download](https://user-images.githubusercontent.com/38635706/156423447-78d28633-4ba4-41e6-8b7e-d2faeda196e0.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156423447-78d28633-4ba4-41e6-8b7e-d2faeda196e0.png" alt="Logo" height="453,54">
+</p>
+
+<br />
 
 ### Primary
 ```R
@@ -204,8 +212,11 @@ DBH_dis <- ggplot(data = dat,mapping= aes(x = Cap,y = dat$DBH, fill = dat$Age_Ca
 # ggsave(filename ="output/DBH_dis.png",plot = DBH_dis,dpi = 300, width = 20, height = 12, units = c("cm"))
 DBH_dis
 ```
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156423387-5c50c468-d5ec-4b0e-b080-b13d71ac7de3.png" alt="Logo" height="450">
+</p>
 
-![download](https://user-images.githubusercontent.com/38635706/156423387-5c50c468-d5ec-4b0e-b080-b13d71ac7de3.png)
+<br />
 
 ```R
 ### --------------- Crown Position Graph --------------- ####
@@ -259,8 +270,11 @@ crown_pos_graph <- ggplot(data = crown_pos_df,aes(x = factor(DBH_class,
 #        units = c("cm"))
 crown_pos_graph
 ```
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156423306-ccd0309c-b796-4718-89c4-5f0691419b46.png" alt="Logo" height="450">
+</p>
 
-![download](https://user-images.githubusercontent.com/38635706/156423306-ccd0309c-b796-4718-89c4-5f0691419b46.png)
+<br />
 
 ```R
 #### --------------- Number of competitors --------------- ####
