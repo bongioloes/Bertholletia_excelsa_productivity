@@ -94,9 +94,12 @@ bnut_fruit_price <- ggplot(dat_fruits, aes(x = Ano))+
 # ggsave(filename ="output/bnut_fruit_price.png",plot = bnut_fruit_price,dpi = 300, width = 25, height = 12, units = c("cm"))
 bnut_fruit_price
 ```
+
+<br />
 <p align="center">
-<img src="https://user-images.githubusercontent.com/38635706/156423538-ab776f2a-a1bd-4638-8ed8-f1ba6a2bf18b.png" alt="Logo" height="453,54">
+<img src="https://user-images.githubusercontent.com/38635706/156423538-ab776f2a-a1bd-4638-8ed8-f1ba6a2bf18b.png" alt="Logo" height="450">
 </p>
+<br />
 
 ```R
 #### ---- Price per lata ----####
@@ -134,10 +137,10 @@ bnut_lata_price <- ggplot(dat_lata, aes(x = Ano))+
 bnut_lata_price
 ```
 
+<br />
 <p align="center">
-<img src="https://user-images.githubusercontent.com/38635706/156423447-78d28633-4ba4-41e6-8b7e-d2faeda196e0.png" alt="Logo" height="453,54">
+<img src="https://user-images.githubusercontent.com/38635706/156423447-78d28633-4ba4-41e6-8b7e-d2faeda196e0.png" alt="Logo" height="450">
 </p>
-
 <br />
 
 ### Primary
@@ -212,10 +215,11 @@ DBH_dis <- ggplot(data = dat,mapping= aes(x = Cap,y = dat$DBH, fill = dat$Age_Ca
 # ggsave(filename ="output/DBH_dis.png",plot = DBH_dis,dpi = 300, width = 20, height = 12, units = c("cm"))
 DBH_dis
 ```
+
+<br />
 <p align="center">
 <img src="https://user-images.githubusercontent.com/38635706/156423387-5c50c468-d5ec-4b0e-b080-b13d71ac7de3.png" alt="Logo" height="450">
 </p>
-
 <br />
 
 ```R
@@ -270,10 +274,11 @@ crown_pos_graph <- ggplot(data = crown_pos_df,aes(x = factor(DBH_class,
 #        units = c("cm"))
 crown_pos_graph
 ```
+
+<br />
 <p align="center">
 <img src="https://user-images.githubusercontent.com/38635706/156423306-ccd0309c-b796-4718-89c4-5f0691419b46.png" alt="Logo" height="450">
 </p>
-
 <br />
 
 ```R
@@ -315,7 +320,12 @@ plot_DBH_N_comp <- ggplot(data = dat)+
 # ggsave(filename ="output/plot_DBH_N_comp.png",plot = plot_DBH_N_comp,dpi = 200,width = 20 ,height = 12, units = c("cm"))
 plot_DBH_N_comp
 ```
-![download](https://user-images.githubusercontent.com/38635706/156423262-b1243619-0ad9-4f33-b438-6a17847219fd.png)
+
+<br />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156423262-b1243619-0ad9-4f33-b438-6a17847219fd.png" alt="Logo" height="450">
+</p>
+<br />
 
 ```R
 # ----- kruskal.test - Crown Position~ Number of competitors ----- #
@@ -344,6 +354,7 @@ ggplot()+
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ============================================================================================================================================ -->
 
+<br />
 
 ## Individual-based Model
 ```Python
@@ -477,7 +488,7 @@ for run in range(runs):
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ============================================================================================================================================ -->
-
+<br />
 
 ## Pos-model data management and plotting
 ### Basal Area
@@ -689,7 +700,12 @@ plot_growth_ba <- ggplot(data = summary_df_ba_g)+
 
 plot_growth_ba
 ```
-![download](https://user-images.githubusercontent.com/38635706/156422619-80f24771-1c4c-4eef-a502-dfb927233e5d.png)
+
+<br />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156422619-80f24771-1c4c-4eef-a502-dfb927233e5d.png" alt="Logo" height="450">
+</p>
+<br />
 
 <!-- ============================================================================================================================================ -->
 
@@ -848,7 +864,12 @@ plot_prod_bar<- ggplot(data=summary_df_prod_f_sg, aes(x=factor(Cap, levels=c('J'
 # ggsave(filename ="output/plot_prod_50r.png",plot = plot_prod_bar,dpi = 600,width = 20, height = 12, units = c("cm"))
 plot_prod_bar
 ```
-![download](https://user-images.githubusercontent.com/38635706/156422420-f2aa2fd5-99e4-4bf1-a61f-134784591bc0.png)
+
+<br />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156422420-f2aa2fd5-99e4-4bf1-a61f-134784591bc0.png" alt="Logo" height="450">
+</p>
+<br />
 
 ```R
 ####------Collecting data to use in the thesis------####
@@ -1159,7 +1180,12 @@ gf <- gridExtra::arrangeGrob(prod_map_PAECM_fruit_no_leg, #1
 plot_prod_map_PAECM_fruit <- png::readPNG("output/prod_mapv20_fruit.png")
 grid::grid.raster(plot_prod_map_PAECM_fruit)
 ```
-![download](https://user-images.githubusercontent.com/38635706/156422160-029ab0bf-0489-4b31-8915-2b52a27b7d36.png)
+
+<br />
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38635706/156422160-029ab0bf-0489-4b31-8915-2b52a27b7d36.png" alt="Logo" height="450">
+</p>
+<br />
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
